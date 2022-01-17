@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208C8206D575700EFC375 /* AppDelegate.swift */; };
+		1C0208CE206D575700EFC375 /* Game_Engine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208CC206D575700EFC375 /* Game_Engine.xcdatamodeld */; };
+		1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0208CF206D575700EFC375 /* Assets.xcassets */; };
+		1C0208D3206D575700EFC375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0208D1206D575700EFC375 /* Main.storyboard */; };
+		1C0208DF206D575700EFC375 /* Game_EngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208DE206D575700EFC375 /* Game_EngineTests.swift */; };
+		1C0208EA206D575700EFC375 /* Game_EngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208E9206D575700EFC375 /* Game_EngineUITests.swift */; };
+		1C0208FB206D578100EFC375 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208FA206D578100EFC375 /* GameView.swift */; };
+		1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */; };
+		A4ABA884278C6C72006635D1 /* Metalkit and Space Invaders - Kevin Keith-3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A4ABA883278C6C72006635D1 /* Metalkit and Space Invaders - Kevin Keith-3.pdf */; };
+		A4ACFD842781F4C3006F2A2A /* RenderPipelineDescriptorLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD7C2781F4C3006F2A2A /* RenderPipelineDescriptorLibrary.swift */; };
+		A4ACFD852781F4C3006F2A2A /* TextureLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD7D2781F4C3006F2A2A /* TextureLibrary.swift */; };
+		A4ACFD862781F4C3006F2A2A /* MeshLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD7E2781F4C3006F2A2A /* MeshLibrary.swift */; };
+		A4ACFD882781F4C3006F2A2A /* SamplerLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD802781F4C3006F2A2A /* SamplerLibrary.swift */; };
+		A4ACFD892781F4C3006F2A2A /* ShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD812781F4C3006F2A2A /* ShaderLibrary.swift */; };
+		A4ACFD8A2781F4C3006F2A2A /* RenderPipelineStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD822781F4C3006F2A2A /* RenderPipelineStateLibrary.swift */; };
+		A4ACFD8B2781F4C3006F2A2A /* VertexDescriptorLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD832781F4C3006F2A2A /* VertexDescriptorLibrary.swift */; };
+		A4ACFD8D2781F4E2006F2A2A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD8C2781F4E2006F2A2A /* Shaders.metal */; };
+		A4ACFDA32781F50D006F2A2A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD922781F50D006F2A2A /* Scene.swift */; };
+		A4ACFDA42781F50D006F2A2A /* MainGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD932781F50D006F2A2A /* MainGameScene.swift */; };
+		A4ACFDA72781F50D006F2A2A /* Missile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD982781F50D006F2A2A /* Missile.swift */; };
+		A4ACFDA82781F50D006F2A2A /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD992781F50D006F2A2A /* Enemy.swift */; };
+		A4ACFDA92781F50D006F2A2A /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD9A2781F50D006F2A2A /* GameObject.swift */; };
+		A4ACFDAA2781F50D006F2A2A /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD9B2781F50D006F2A2A /* Explosion.swift */; };
+		A4ACFDAB2781F50D006F2A2A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD9C2781F50D006F2A2A /* Player.swift */; };
+		A4ACFDAC2781F50D006F2A2A /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD9D2781F50D006F2A2A /* Terrain.swift */; };
+		A4ACFDAD2781F50D006F2A2A /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD9E2781F50D006F2A2A /* Health.swift */; };
+		A4ACFDAE2781F50D006F2A2A /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFD9F2781F50D006F2A2A /* Node.swift */; };
+		A4ACFDB92781F54C006F2A2A /* Terrain_Base_Grass.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDB22781F54C006F2A2A /* Terrain_Base_Grass.png */; };
+		A4ACFDBB2781F54C006F2A2A /* CannonBall.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDB42781F54C006F2A2A /* CannonBall.png */; };
+		A4ACFDBD2781F54C006F2A2A /* Explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDB62781F54C006F2A2A /* Explosion.png */; };
+		A4ACFDBE2781F54C006F2A2A /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDB72781F54C006F2A2A /* Unknown.jpeg */; };
+		A4ACFDBF2781F54C006F2A2A /* Tank.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDB82781F54C006F2A2A /* Tank.png */; };
+		A4ACFDC82781F5B6006F2A2A /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDC12781F5B6006F2A2A /* Engine.swift */; };
+		A4ACFDC92781F5B6006F2A2A /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDC32781F5B6006F2A2A /* KeyCode.swift */; };
+		A4ACFDCA2781F5B6006F2A2A /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDC42781F5B6006F2A2A /* Keyboard.swift */; };
+		A4ACFDCB2781F5B6006F2A2A /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDC52781F5B6006F2A2A /* Preferences.swift */; };
+		A4ACFDCC2781F5B6006F2A2A /* GameTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDC62781F5B6006F2A2A /* GameTime.swift */; };
+		A4ACFDCD2781F5B6006F2A2A /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDC72781F5B6006F2A2A /* Types.swift */; };
+		A4ACFDCF2781F5FE006F2A2A /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDCE2781F5FE006F2A2A /* Math.swift */; };
+		A4ACFDD12781F7CE006F2A2A /* SceneEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFDD02781F7CE006F2A2A /* SceneEntityManager.swift */; };
+		A4ACFDD62781FA40006F2A2A /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDD52781FA40006F2A2A /* Player.png */; };
+		A4ACFDDA2781FEBD006F2A2A /* Enemy3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDD72781FEBD006F2A2A /* Enemy3.png */; };
+		A4ACFDDB2781FEBD006F2A2A /* Enemy1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDD82781FEBD006F2A2A /* Enemy1.png */; };
+		A4ACFDDC2781FEBD006F2A2A /* Enemy2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDD92781FEBD006F2A2A /* Enemy2.png */; };
+		A4ACFDDE278244E4006F2A2A /* EnemyExplosion.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ACFDDD278244E4006F2A2A /* EnemyExplosion.png */; };
+		EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610E20CF3524004D5AAD /* SceneManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C0208DB206D575700EFC375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C0208BD206D575700EFC375 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C0208C4206D575700EFC375;
+			remoteInfo = "Game Engine";
+		};
+		1C0208E6206D575700EFC375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C0208BD206D575700EFC375 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C0208C4206D575700EFC375;
+			remoteInfo = "Game Engine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C0208C5206D575700EFC375 /* Space Invaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Invaders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0208C8206D575700EFC375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C0208CD206D575700EFC375 /* Game_Engine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game_Engine.xcdatamodel; sourceTree = "<group>"; };
+		1C0208CF206D575700EFC375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C0208D2206D575700EFC375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C0208D4206D575700EFC375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0208D5206D575700EFC375 /* Game_Engine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Game_Engine.entitlements; sourceTree = "<group>"; };
+		1C0208DA206D575700EFC375 /* Space InvadersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space InvadersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0208DE206D575700EFC375 /* Game_EngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_EngineTests.swift; sourceTree = "<group>"; };
+		1C0208E0206D575700EFC375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0208E5206D575700EFC375 /* Space InvadersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space InvadersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0208E9206D575700EFC375 /* Game_EngineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_EngineUITests.swift; sourceTree = "<group>"; };
+		1C0208EB206D575700EFC375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0208FA206D578100EFC375 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		A4ABA883278C6C72006635D1 /* Metalkit and Space Invaders - Kevin Keith-3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Metalkit and Space Invaders - Kevin Keith-3.pdf"; sourceTree = "<group>"; };
+		A4ACFD7C2781F4C3006F2A2A /* RenderPipelineDescriptorLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderPipelineDescriptorLibrary.swift; sourceTree = "<group>"; };
+		A4ACFD7D2781F4C3006F2A2A /* TextureLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureLibrary.swift; sourceTree = "<group>"; };
+		A4ACFD7E2781F4C3006F2A2A /* MeshLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshLibrary.swift; sourceTree = "<group>"; };
+		A4ACFD802781F4C3006F2A2A /* SamplerLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplerLibrary.swift; sourceTree = "<group>"; };
+		A4ACFD812781F4C3006F2A2A /* ShaderLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderLibrary.swift; sourceTree = "<group>"; };
+		A4ACFD822781F4C3006F2A2A /* RenderPipelineStateLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderPipelineStateLibrary.swift; sourceTree = "<group>"; };
+		A4ACFD832781F4C3006F2A2A /* VertexDescriptorLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertexDescriptorLibrary.swift; sourceTree = "<group>"; };
+		A4ACFD8C2781F4E2006F2A2A /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
+		A4ACFD922781F50D006F2A2A /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		A4ACFD932781F50D006F2A2A /* MainGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGameScene.swift; sourceTree = "<group>"; };
+		A4ACFD982781F50D006F2A2A /* Missile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Missile.swift; sourceTree = "<group>"; };
+		A4ACFD992781F50D006F2A2A /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		A4ACFD9A2781F50D006F2A2A /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		A4ACFD9B2781F50D006F2A2A /* Explosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
+		A4ACFD9C2781F50D006F2A2A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A4ACFD9D2781F50D006F2A2A /* Terrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
+		A4ACFD9E2781F50D006F2A2A /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		A4ACFD9F2781F50D006F2A2A /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		A4ACFDB22781F54C006F2A2A /* Terrain_Base_Grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Terrain_Base_Grass.png; sourceTree = "<group>"; };
+		A4ACFDB42781F54C006F2A2A /* CannonBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CannonBall.png; sourceTree = "<group>"; };
+		A4ACFDB62781F54C006F2A2A /* Explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Explosion.png; sourceTree = "<group>"; };
+		A4ACFDB72781F54C006F2A2A /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = "<group>"; };
+		A4ACFDB82781F54C006F2A2A /* Tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tank.png; sourceTree = "<group>"; };
+		A4ACFDC12781F5B6006F2A2A /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		A4ACFDC32781F5B6006F2A2A /* KeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
+		A4ACFDC42781F5B6006F2A2A /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		A4ACFDC52781F5B6006F2A2A /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		A4ACFDC62781F5B6006F2A2A /* GameTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTime.swift; sourceTree = "<group>"; };
+		A4ACFDC72781F5B6006F2A2A /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		A4ACFDCE2781F5FE006F2A2A /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		A4ACFDD02781F7CE006F2A2A /* SceneEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneEntityManager.swift; sourceTree = "<group>"; };
+		A4ACFDD52781FA40006F2A2A /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		A4ACFDD72781FEBD006F2A2A /* Enemy3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enemy3.png; sourceTree = "<group>"; };
+		A4ACFDD82781FEBD006F2A2A /* Enemy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enemy1.png; sourceTree = "<group>"; };
+		A4ACFDD92781FEBD006F2A2A /* Enemy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enemy2.png; sourceTree = "<group>"; };
+		A4ACFDDD278244E4006F2A2A /* EnemyExplosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyExplosion.png; sourceTree = "<group>"; };
+		EBB8610E20CF3524004D5AAD /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C0208C2206D575700EFC375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0208D7206D575700EFC375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0208E2206D575700EFC375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C0208BC206D575700EFC375 = {
+			isa = PBXGroup;
+			children = (
+				A4ACFDDF2783A98F006F2A2A /* Report */,
+				1C0208C7206D575700EFC375 /* Game Engine */,
+				1C0208DD206D575700EFC375 /* Game EngineTests */,
+				1C0208E8206D575700EFC375 /* Game EngineUITests */,
+				1C0208C6206D575700EFC375 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C0208C6206D575700EFC375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C0208C5206D575700EFC375 /* Space Invaders.app */,
+				1C0208DA206D575700EFC375 /* Space InvadersTests.xctest */,
+				1C0208E5206D575700EFC375 /* Space InvadersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C0208C7206D575700EFC375 /* Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFDB12781F54C006F2A2A /* Textures */,
+				A4ACFD8E2781F50D006F2A2A /* Game Scene */,
+				1C477E8D20B4ECA80028C8FE /* Maths */,
+				1CA84B222092A66100465F6A /* Libraries */,
+				EBB8610D20CF3511004D5AAD /* Managers */,
+				1CA84B252092A67500465F6A /* Shaders */,
+				1CA84B242092A67000465F6A /* Display */,
+				1C0208F7206D575F00EFC375 /* Other FIles */,
+			);
+			path = "Game Engine";
+			sourceTree = "<group>";
+		};
+		1C0208DD206D575700EFC375 /* Game EngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C0208DE206D575700EFC375 /* Game_EngineTests.swift */,
+				1C0208E0206D575700EFC375 /* Info.plist */,
+			);
+			path = "Game EngineTests";
+			sourceTree = "<group>";
+		};
+		1C0208E8206D575700EFC375 /* Game EngineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C0208E9206D575700EFC375 /* Game_EngineUITests.swift */,
+				1C0208EB206D575700EFC375 /* Info.plist */,
+			);
+			path = "Game EngineUITests";
+			sourceTree = "<group>";
+		};
+		1C0208F7206D575F00EFC375 /* Other FIles */ = {
+			isa = PBXGroup;
+			children = (
+				1C0208C8206D575700EFC375 /* AppDelegate.swift */,
+				1C0208CF206D575700EFC375 /* Assets.xcassets */,
+				1C0208D4206D575700EFC375 /* Info.plist */,
+				1C0208D5206D575700EFC375 /* Game_Engine.entitlements */,
+				1C0208CC206D575700EFC375 /* Game_Engine.xcdatamodeld */,
+			);
+			path = "Other FIles";
+			sourceTree = "<group>";
+		};
+		1C477E8D20B4ECA80028C8FE /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFDCE2781F5FE006F2A2A /* Math.swift */,
+			);
+			path = Maths;
+			sourceTree = "<group>";
+		};
+		1CA84B222092A66100465F6A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFD7E2781F4C3006F2A2A /* MeshLibrary.swift */,
+				A4ACFD7C2781F4C3006F2A2A /* RenderPipelineDescriptorLibrary.swift */,
+				A4ACFD822781F4C3006F2A2A /* RenderPipelineStateLibrary.swift */,
+				A4ACFD802781F4C3006F2A2A /* SamplerLibrary.swift */,
+				A4ACFD812781F4C3006F2A2A /* ShaderLibrary.swift */,
+				A4ACFD7D2781F4C3006F2A2A /* TextureLibrary.swift */,
+				A4ACFD832781F4C3006F2A2A /* VertexDescriptorLibrary.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		1CA84B242092A67000465F6A /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */,
+				1C0208FA206D578100EFC375 /* GameView.swift */,
+				1C0208D1206D575700EFC375 /* Main.storyboard */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		1CA84B252092A67500465F6A /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFD8C2781F4E2006F2A2A /* Shaders.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		A4ACFD8E2781F50D006F2A2A /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFDC02781F5B6006F2A2A /* Core */,
+				A4ACFD912781F50D006F2A2A /* Scenes */,
+				A4ACFD972781F50D006F2A2A /* Game Objects */,
+			);
+			path = "Game Scene";
+			sourceTree = "<group>";
+		};
+		A4ACFD912781F50D006F2A2A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFD922781F50D006F2A2A /* Scene.swift */,
+				A4ACFD932781F50D006F2A2A /* MainGameScene.swift */,
+				A4ACFDD02781F7CE006F2A2A /* SceneEntityManager.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A4ACFD972781F50D006F2A2A /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFD982781F50D006F2A2A /* Missile.swift */,
+				A4ACFD992781F50D006F2A2A /* Enemy.swift */,
+				A4ACFD9A2781F50D006F2A2A /* GameObject.swift */,
+				A4ACFD9B2781F50D006F2A2A /* Explosion.swift */,
+				A4ACFD9C2781F50D006F2A2A /* Player.swift */,
+				A4ACFD9D2781F50D006F2A2A /* Terrain.swift */,
+				A4ACFD9E2781F50D006F2A2A /* Health.swift */,
+				A4ACFD9F2781F50D006F2A2A /* Node.swift */,
+			);
+			path = "Game Objects";
+			sourceTree = "<group>";
+		};
+		A4ACFDB12781F54C006F2A2A /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFDDD278244E4006F2A2A /* EnemyExplosion.png */,
+				A4ACFDD82781FEBD006F2A2A /* Enemy1.png */,
+				A4ACFDD92781FEBD006F2A2A /* Enemy2.png */,
+				A4ACFDD72781FEBD006F2A2A /* Enemy3.png */,
+				A4ACFDD52781FA40006F2A2A /* Player.png */,
+				A4ACFDB22781F54C006F2A2A /* Terrain_Base_Grass.png */,
+				A4ACFDB42781F54C006F2A2A /* CannonBall.png */,
+				A4ACFDB62781F54C006F2A2A /* Explosion.png */,
+				A4ACFDB72781F54C006F2A2A /* Unknown.jpeg */,
+				A4ACFDB82781F54C006F2A2A /* Tank.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		A4ACFDC02781F5B6006F2A2A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFDC22781F5B6006F2A2A /* Input */,
+				A4ACFDC12781F5B6006F2A2A /* Engine.swift */,
+				A4ACFDC52781F5B6006F2A2A /* Preferences.swift */,
+				A4ACFDC62781F5B6006F2A2A /* GameTime.swift */,
+				A4ACFDC72781F5B6006F2A2A /* Types.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A4ACFDC22781F5B6006F2A2A /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACFDC32781F5B6006F2A2A /* KeyCode.swift */,
+				A4ACFDC42781F5B6006F2A2A /* Keyboard.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		A4ACFDDF2783A98F006F2A2A /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				A4ABA883278C6C72006635D1 /* Metalkit and Space Invaders - Kevin Keith-3.pdf */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		EBB8610D20CF3511004D5AAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8610E20CF3524004D5AAD /* SceneManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C0208C4206D575700EFC375 /* Space Invaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0208EE206D575700EFC375 /* Build configuration list for PBXNativeTarget "Space Invaders" */;
+			buildPhases = (
+				1C0208C1206D575700EFC375 /* Sources */,
+				1C0208C2206D575700EFC375 /* Frameworks */,
+				1C0208C3206D575700EFC375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Invaders";
+			productName = "Game Engine";
+			productReference = 1C0208C5206D575700EFC375 /* Space Invaders.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C0208D9206D575700EFC375 /* Space InvadersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0208F1206D575700EFC375 /* Build configuration list for PBXNativeTarget "Space InvadersTests" */;
+			buildPhases = (
+				1C0208D6206D575700EFC375 /* Sources */,
+				1C0208D7206D575700EFC375 /* Frameworks */,
+				1C0208D8206D575700EFC375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C0208DC206D575700EFC375 /* PBXTargetDependency */,
+			);
+			name = "Space InvadersTests";
+			productName = "Game EngineTests";
+			productReference = 1C0208DA206D575700EFC375 /* Space InvadersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C0208E4206D575700EFC375 /* Space InvadersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0208F4206D575700EFC375 /* Build configuration list for PBXNativeTarget "Space InvadersUITests" */;
+			buildPhases = (
+				1C0208E1206D575700EFC375 /* Sources */,
+				1C0208E2206D575700EFC375 /* Frameworks */,
+				1C0208E3206D575700EFC375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C0208E7206D575700EFC375 /* PBXTargetDependency */,
+			);
+			name = "Space InvadersUITests";
+			productName = "Game EngineUITests";
+			productReference = 1C0208E5206D575700EFC375 /* Space InvadersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C0208BD206D575700EFC375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = TwohysTuts;
+				TargetAttributes = {
+					1C0208C4206D575700EFC375 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					1C0208D9206D575700EFC375 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1C0208C4206D575700EFC375;
+					};
+					1C0208E4206D575700EFC375 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1C0208C4206D575700EFC375;
+					};
+				};
+			};
+			buildConfigurationList = 1C0208C0206D575700EFC375 /* Build configuration list for PBXProject "Space Invaders" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C0208BC206D575700EFC375;
+			productRefGroup = 1C0208C6206D575700EFC375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C0208C4206D575700EFC375 /* Space Invaders */,
+				1C0208D9206D575700EFC375 /* Space InvadersTests */,
+				1C0208E4206D575700EFC375 /* Space InvadersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C0208C3206D575700EFC375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4ACFDBF2781F54C006F2A2A /* Tank.png in Resources */,
+				A4ACFDBE2781F54C006F2A2A /* Unknown.jpeg in Resources */,
+				A4ACFDD62781FA40006F2A2A /* Player.png in Resources */,
+				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
+				A4ACFDDE278244E4006F2A2A /* EnemyExplosion.png in Resources */,
+				A4ACFDDB2781FEBD006F2A2A /* Enemy1.png in Resources */,
+				A4ACFDB92781F54C006F2A2A /* Terrain_Base_Grass.png in Resources */,
+				A4ACFDDC2781FEBD006F2A2A /* Enemy2.png in Resources */,
+				A4ACFDDA2781FEBD006F2A2A /* Enemy3.png in Resources */,
+				A4ABA884278C6C72006635D1 /* Metalkit and Space Invaders - Kevin Keith-3.pdf in Resources */,
+				1C0208D3206D575700EFC375 /* Main.storyboard in Resources */,
+				A4ACFDBB2781F54C006F2A2A /* CannonBall.png in Resources */,
+				A4ACFDBD2781F54C006F2A2A /* Explosion.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0208D8206D575700EFC375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0208E3206D575700EFC375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C0208C1206D575700EFC375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4ACFDCC2781F5B6006F2A2A /* GameTime.swift in Sources */,
+				A4ACFDA92781F50D006F2A2A /* GameObject.swift in Sources */,
+				A4ACFD882781F4C3006F2A2A /* SamplerLibrary.swift in Sources */,
+				A4ACFDCD2781F5B6006F2A2A /* Types.swift in Sources */,
+				1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */,
+				A4ACFD8A2781F4C3006F2A2A /* RenderPipelineStateLibrary.swift in Sources */,
+				1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */,
+				EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */,
+				A4ACFD892781F4C3006F2A2A /* ShaderLibrary.swift in Sources */,
+				A4ACFDA42781F50D006F2A2A /* MainGameScene.swift in Sources */,
+				A4ACFDAB2781F50D006F2A2A /* Player.swift in Sources */,
+				A4ACFDAA2781F50D006F2A2A /* Explosion.swift in Sources */,
+				A4ACFDA82781F50D006F2A2A /* Enemy.swift in Sources */,
+				A4ACFDC92781F5B6006F2A2A /* KeyCode.swift in Sources */,
+				A4ACFDA72781F50D006F2A2A /* Missile.swift in Sources */,
+				1C0208FB206D578100EFC375 /* GameView.swift in Sources */,
+				A4ACFDAD2781F50D006F2A2A /* Health.swift in Sources */,
+				A4ACFD842781F4C3006F2A2A /* RenderPipelineDescriptorLibrary.swift in Sources */,
+				A4ACFD8D2781F4E2006F2A2A /* Shaders.metal in Sources */,
+				A4ACFDC82781F5B6006F2A2A /* Engine.swift in Sources */,
+				A4ACFDCF2781F5FE006F2A2A /* Math.swift in Sources */,
+				A4ACFDD12781F7CE006F2A2A /* SceneEntityManager.swift in Sources */,
+				A4ACFD852781F4C3006F2A2A /* TextureLibrary.swift in Sources */,
+				A4ACFD8B2781F4C3006F2A2A /* VertexDescriptorLibrary.swift in Sources */,
+				A4ACFDCA2781F5B6006F2A2A /* Keyboard.swift in Sources */,
+				A4ACFDAE2781F50D006F2A2A /* Node.swift in Sources */,
+				A4ACFD862781F4C3006F2A2A /* MeshLibrary.swift in Sources */,
+				A4ACFDCB2781F5B6006F2A2A /* Preferences.swift in Sources */,
+				A4ACFDA32781F50D006F2A2A /* Scene.swift in Sources */,
+				A4ACFDAC2781F50D006F2A2A /* Terrain.swift in Sources */,
+				1C0208CE206D575700EFC375 /* Game_Engine.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0208D6206D575700EFC375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0208DF206D575700EFC375 /* Game_EngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0208E1206D575700EFC375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0208EA206D575700EFC375 /* Game_EngineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C0208DC206D575700EFC375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C0208C4206D575700EFC375 /* Space Invaders */;
+			targetProxy = 1C0208DB206D575700EFC375 /* PBXContainerItemProxy */;
+		};
+		1C0208E7206D575700EFC375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C0208C4206D575700EFC375 /* Space Invaders */;
+			targetProxy = 1C0208E6206D575700EFC375 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C0208D1206D575700EFC375 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C0208D2206D575700EFC375 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C0208EC206D575700EFC375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C0208ED206D575700EFC375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		1C0208EF206D575700EFC375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Game Engine/Other Files/Game_Engine.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6N5GDTK23A;
+				INFOPLIST_FILE = "$(SRCROOT)/Game Engine/Other FIles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KevinKeith.Game-Engine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1C0208F0206D575700EFC375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Game Engine/Other Files/Game_Engine.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6N5GDTK23A;
+				INFOPLIST_FILE = "$(SRCROOT)/Game Engine/Other FIles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KevinKeith.Game-Engine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1C0208F2206D575700EFC375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6N5GDTK23A;
+				INFOPLIST_FILE = "Game EngineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Invaders.app/Contents/MacOS/Space Invaders";
+			};
+			name = Debug;
+		};
+		1C0208F3206D575700EFC375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6N5GDTK23A;
+				INFOPLIST_FILE = "Game EngineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Invaders.app/Contents/MacOS/Space Invaders";
+			};
+			name = Release;
+		};
+		1C0208F5206D575700EFC375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6N5GDTK23A;
+				INFOPLIST_FILE = "Game EngineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Game Engine";
+			};
+			name = Debug;
+		};
+		1C0208F6206D575700EFC375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6N5GDTK23A;
+				INFOPLIST_FILE = "Game EngineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Game Engine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C0208C0206D575700EFC375 /* Build configuration list for PBXProject "Space Invaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0208EC206D575700EFC375 /* Debug */,
+				1C0208ED206D575700EFC375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C0208EE206D575700EFC375 /* Build configuration list for PBXNativeTarget "Space Invaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0208EF206D575700EFC375 /* Debug */,
+				1C0208F0206D575700EFC375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C0208F1206D575700EFC375 /* Build configuration list for PBXNativeTarget "Space InvadersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0208F2206D575700EFC375 /* Debug */,
+				1C0208F3206D575700EFC375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C0208F4206D575700EFC375 /* Build configuration list for PBXNativeTarget "Space InvadersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0208F5206D575700EFC375 /* Debug */,
+				1C0208F6206D575700EFC375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C0208CC206D575700EFC375 /* Game_Engine.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C0208CD206D575700EFC375 /* Game_Engine.xcdatamodel */,
+			);
+			currentVersion = 1C0208CD206D575700EFC375 /* Game_Engine.xcdatamodel */;
+			path = Game_Engine.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1C0208BD206D575700EFC375 /* Project object */;
+}
